@@ -1,146 +1,212 @@
-/* Google fonts import link */
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 *{
     margin:0;
     padding:0;
 }
 
-.logo{
-    display:flex;
-    align-items: center;
-    font-family:'Varela Round', sans-serif;
-    font-weight: bolder;
+nav .openMenu{
+    font-size: 1.5rem;
+    margin:20px;
+    display:none;
+    cursor:pointer;
 }
 
-.logo img{
-  height: 60px;
-  padding: 5px 15px 5px;
+.dropdown li a:hover {
+    color:orange;
+}
+
+nav{
+    color:white;
+    background-color: black;
+    position:sticky;
+    top:0;
+}
+
+.dropdown li a{
+    display:block;
+    padding:10px 10px;
+    text-decoration: none;
+    color:white;
 }
 
 nav ul{
     display:flex;
     align-items: center;
-    list-style:none;
-    font-family: 'Ubuntu', sans-serif;
-    
 }
 
 nav ul li{
-    margin: 1vh 2.5vw;
+    margin:0 40px;
+    list-style: none;
 }
 
-nav{
-    background-color:black;
-    color:white;
-    height:76px;
-    width:auto;
+.logo{
+    display:flex;
+    align-items: center;
+}
+
+.logo img{
+    width:59px;
+    padding:8px 0;
+    margin:0 20px;
+
+}
+
+/* Main Container */
+.main-container{
+    display:flex;
+    justify-content: center;
+    background-color: antiquewhite;
     
+
 }
 
+.content-holder{
+    background-color:black;
+    color:white; 
+    width:78%;
+    margin:20px 20px;
+    border-radius:10px;
+}
 
+.content-holder h1{
+    margin:20px 0 0 30px;
+}
 
+.tiles{
+    padding:20px 0 20px 45px;
+}
+
+.song{
+    background-color:white;
+    color:black;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.1em;
+    font-weight:bold;
+    width:35%;
+    margin:15px 20px;
+    border-radius:40px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 10px;
+}
+
+.song img{
+    height:45px;
+    border-radius:100%;
+    margin:5px 3px;
+}
 
 .cover img{
     height:auto;
     width:25vw;
     position:absolute;
-    right:7vw;
-    top:20vh;
-    
-}
-
-#gif{
-    height:15vh;
-    width:35vw;
-    position: absolute;
-    right:3vw;
-    bottom:3vh;
-    opacity:0;
-    transition: opacity 0.5s ease-in;
-}
-
-.container{
-    min-height:80vh;
-    background-color:blanchedalmond;
-    display:flex;
-    flex-direction: row;
-    color:white;
-
+    right:17vw;
+    top:29vh;
 
 }
 
-.middle-container{
-    width:76vw;
-    margin:20px 0px 20px 11vw;
-    border-radius:10px;
-    background-color: black;
-    background-repeat: no-repeat;
-    background-size:cover;
-    position:relative;
-    font-family:'Ubuntu', sans-serif;
-}
-
-.middle-container h1{
-    margin:20px 0 0 40px;
-}
-
-.songList{
-    padding:10px 0 20px 5vw;
-}
-
-.song{
-    background-color:white;
-    border-radius:40px;
-    color:black;
-    display:flex;
-    align-items: center;
-    width:30vw;
-    margin:20px 0;
-    justify-content: space-between;
+.btn{
+    cursor: pointer;
 }
 
 
-.song img{
-    height:3vw;
-    border-radius:50px;
-    margin:5px 30px 5px 10px ;
-}
-
-.song span{
-    margin:0 2vw;
-    font-weight: bold;
-    font-size:1.1vw;
-}
-
-.song-button{
-
-}
-
-
-
+/* Bottom Play Bar */
 .bottom{
     background-color:black;
-    position: sticky;
-    bottom:0;
     width:100%;
-    height:13vh;
-    display:flex;
-    align-items:center;
-    flex-direction: column;
     color:white;
-
+    height:auto;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    position:sticky;
+    bottom:0;
 }
 
 .slider{
     width:80vw;
-    padding:10px 0;
-    cursor:pointer;
+    margin:10px 0;
+    cursor: pointer;
 }
 
-i{
-    padding:5px 10px;
-    cursor:pointer;
+.icon{
+    cursor: pointer;
+    padding-bottom: 20px;
+}
+
+#play{
+    margin:0 20px;
+}
+
+
+
+@media only screen and (max-width:500px){
+
+    body{
+        overflow-x:hidden;
+    }
+
+    .dropdown li{
+        display:block;
+        position: relative;
+    }
+
+    nav ul li{
+        margin:0;
+    }
+
+    .dropdown li a{
+        padding:15px 50px;
+    }
+
+    h1{
+        font-size: 1.5em;
+    }
+
+   
+   
+    .dropdown{
+        height:auto;
+        position:fixed;
+        top:70px;
+        right:0;
+        z-index:10;
+        flex-direction: column;
+        justify-content: center;
+        background-color:black;
+        transition: top 1s ease;
+        display:none;
+    
+    }
+    nav .openMenu{
+        display:block;
+        color:white;
+        margin-bottom:20px;
+        position:fixed;
+        right:5px;
+        top:5px;
+
+
+    }
+    .tiles{
+        padding:20px 20px 10px 35px;
+    }
+
+    
+    .bottom{
+        position:sticky;
+        width:100vw;
+    }
+
+    .song{
+        font-size: 1em;
+        margin:15px 0px;
+        width:55vw;
+    }
+
+    .cover{
+        display: none;
+    }
 }
