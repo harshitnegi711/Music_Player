@@ -1,93 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harshit's Music</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>harsh's Music</title>
+    <!--Favicon-->
+    <link
+      rel="shortcut icon"
+      href="resources/images/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!--Style sheet-->
+    <link rel="stylesheet" href="style.css" />
+
+    <!--Font Awessom kit -->
+    <script
+      src="https://kit.fontawesome.com/87f44c9924.js"
+      crossorigin="anonymous">
+    </script>
+
     
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="resources/images/favicon-1.ico" type="image/x-icon">
-    <!-- Style Sheet -->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- font Awesom kit link-->
-    <script src="https://kit.fontawesome.com/87f44c9924.js" crossorigin="anonymous"></script>
-
-</head>
-<body>
-    <!-- Navigation Bar -->
+  </head>
+  <body>
+    <!--Navagation Bar-->
     <nav>
-        <ul>
-            <li class="logo"><img src="resources/images/logo.png"  alt="logo">Harshit's Music</li>
-            <li>About</li>
-            <li>Home</li>
-            <li>Contact</li>
+      <ul>
+        <li class="logo">
+          <img src="resources/images/logo.png" alt="logo" />harshit's Music
+        </li>
+        <div class="openMenu"><i class=" open fa fa-bars"></i></div>
+        <ul class="dropdown">
+          <li><a href="">About</a></li>
+          <li><a href="">Home</a></li>
+          <li><a href="">Contact</a></li>
         </ul>
+    
+      </ul>
     </nav>
 
-    <!-- Middle Containers -->
-    <div class="container">
+    <!--Main Container-->
+    <div class="main-container">
+      <div class="content-holder">
+        <h1>Best Songs Collections - By Harshit</h1>
 
-        <div class="middle-container">
-            <h1> Best Song Collection - By Harshit </h1>
+        <div class="tiles">
+          <div class="song">
+            <img src="resources/covers/cover-1.jpg" alt="cover-1" /><span
+              >Abad kr do - from Ludo.</span
+            >
+            <i class="fas fa-2x fa-play-circle btn" id="1"></i>
+          </div>
 
-            <div class="songList">
-                <div class="song">
-                    <img src="resources/covers/cover-1.jpg"  alt="song cover"><span> Aabad krr do - form Ludo </span>
-                    <i class="fa song-button fa-2x fa-play-circle" id="1"></i>
-                </div>
-                <div class="song">
-                    <img src="resources/covers/cover-2.jpg" alt="song cover"><span> Born to shine - Diljit Dosang </span>
-                    <i class="fa song-button fa-2x fa-play-circle" id="2" ></i>
-                </div>
-                <div class="song">
-                    <img src="resources/covers/cover-3.jpg"  alt="song cover"><span> Galliya - Ik Villan </span>
-                    <i class="fa song-button fa-2x fa-play-circle" id="3"></i>
-                </div>
-                <div class="song">
-                    <img src="resources/covers/cover-4.jpg"  alt="song cover"><span> Laal Ishk - Raamleela </span>
-                    <i class="fa song-button fa-2x fa-play-circle" id="4"></i>
-                </div>
-                <div class="song">
-                    <img src="resources/covers/cover-5.jpg"  alt="song cover"><span> Surma </span>
-                    <i class="fa song-button fa-2x fa-play-circle" id="5"></i>
-                </div>
-                <div class="song">
-                    <img src="resources/covers/cover-6.jpg"  alt="song cover"><span> Tera Hua </span>
-                    <i class="fa song-button fa-2x fa-play-circle" id="6"></i>
-                </div>
-                <div class="song">
-                    <img src="resources/covers/cover-7.jpg"  alt="song cover"><span> TrackSuit - official </span>
-                    <i class="fa song-button fa-2x fa-play-circle" id="7"></i>
-                </div>
-                
-            </div>
+          <div class="song">
+            <img src="resources/covers/cover-2.jpg" alt="cover-1" /><span
+              >Born to Shine - by Diljeet.</span
+            >
+            <i class="fas fa-2x fa-play-circle btn" id="2"></i>
+          </div>
 
-            <div class="cover">
-                <img src="resources/covers/demo.jpg" id="coverImg" alt="song cover ">
-              
-            </div>
+          <div class="song">
+            <img src="resources/covers/cover-3.jpg" alt="cover-1" /><span
+              >Galliya - from Ik Villan.</span
+            >
+            <i class="fas fa-2x fa-play-circle btn" id="3"></i>
+          </div>
 
-            <div class="equalizer"><img src="resources/images/gif.gif" id="gif" alt="visualizer"></div>
-            
+          <div class="song">
+            <img src="resources/covers/cover-4.jpg" alt="cover-1" /><span
+              >Laal Ishq - from RamLeela.</span
+            >
+            <i class="fas fa-2x fa-play-circle btn" id="4"></i>
+          </div>
+
+          <div class="song">
+            <img src="resources/covers/cover-5.jpg" alt="cover-1" /><span
+              >Surma.</span
+            >
+            <i class="fas fa-2x fa-play-circle btn" id="5"></i>
+          </div>
+
+          <div class="song">
+            <img src="resources/covers/cover-6.jpg" alt="cover-1" /><span
+              >Tera Hua.</span
+            >
+            <i class="fas fa-2x fa-play-circle btn" id="6"></i>
+          </div>
+
+          <div class="song">
+            <img src="resources/covers/cover-7.jpg" alt="cover-1" /><span
+              >TrackSuit.</span
+            >
+            <i class="fas fa-2x fa-play-circle btn" id="7"></i>
+          </div>
+
+          <div class="song">
+            <img src="resources/covers/cover-8.jpg" alt="cover-1" /><span
+              >Aaj Sajeya.</span
+            >
+            <i class="fas fa-2x fa-play-circle btn" id="8"></i>
+          </div>
         </div>
 
+        <div class="cover">
+          <img id="poster" src="resources/covers/demo.jpg" alt="image" />
+        </div>
+      </div>
     </div>
 
-    <!-- Botton container -->
+    <!--Bottom Play bar-->
     <div class="bottom">
-        <input type="range" min="1" max="100" value="0" class="slider" id="seek">
-        <div class="icons">
-            <!-- fontawesome icons -->
-            <i class="fas fa-3x fa-step-backward" id="previous"></i>
-            <i class="fas fa-3x fa-play-circle" id="play"></i>
-            <i class="fas fa-3x fa-step-forward" id="next"></i> 
-        </div>
+      <input
+        type="range"
+        min="0"
+        max="100"
+        value="0"
+        class="slider"
+        id="seek"
+      />
+
+      <div class="icon">
+        <i class="fas fa-3x fa-step-backward" id="previous"></i>
+        <i class="fas fa-3x fa-play-circle" id="play"></i>
+        <i class="fas fa-3x fa-step-forward" id="next"></i>
+      </div>
     </div>
 
-    <!-- JavaScript -->
+    <!--Jquerry-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!--JavaScript-->
     <script src="index.js"></script>
-    
-</body>
+  </body>
 </html>
